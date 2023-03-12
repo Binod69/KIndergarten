@@ -45,10 +45,10 @@ const Testimonials = () => {
               </figure>
               <div className="swipers">
                 <Swiper
-                  spaceBetween={30}
-                  centeredSlides={true}
+                  // spaceBetween={30}
+                  // centeredSlides={true}
                   autoplay={{
-                    delay: 2500,
+                    delay: 3000,
                     disableOnInteraction: false,
                   }}
                   pagination={{
@@ -64,31 +64,35 @@ const Testimonials = () => {
                       src="/assets/testi1.avif"
                       alt=""
                     />
-                    <AiOutlinePlayCircle className="play" size={50} />
+                    <AiOutlinePlayCircle className="play" size={25} />
+                    <p className="para">Elon Gated</p>
                   </SwiperSlide>
                   <SwiperSlide>
                     <img
                       className="swiperImg"
-                      src="/assets/testi1.avif"
+                      src="/assets/testi2.avif"
                       alt=""
                     />
-                    <AiOutlinePlayCircle className="play" size={50} />
+                    <AiOutlinePlayCircle className="play" size={25} />
+                    <p className="para">Elon Gated</p>
                   </SwiperSlide>
                   <SwiperSlide>
                     <img
                       className="swiperImg"
-                      src="/assets/testi1.avif"
+                      src="/assets/testi3.avif"
                       alt=""
                     />
-                    <AiOutlinePlayCircle className="play" size={50} />
+                    <AiOutlinePlayCircle className="play" size={25} />
+                    <p className="para">Elon Gated</p>
                   </SwiperSlide>
                   <SwiperSlide>
                     <img
                       className="swiperImg"
-                      src="/assets/testi1.avif"
+                      src="/assets/testi4.avif"
                       alt=""
                     />
-                    <AiOutlinePlayCircle className="play" size={50} />
+                    <AiOutlinePlayCircle className="play" size={25} />
+                    <p className="para">Elon Gated</p>
                   </SwiperSlide>
                 </Swiper>
               </div>

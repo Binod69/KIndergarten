@@ -154,10 +154,11 @@ article {
   }
 }
 .tabContainer {
-  background-image: linear-gradient(rgba(#eddee6, 0.88), rgba(#eddee6, 0.88)),
+  background-image: linear-gradient(rgba(#e1ccd7, 0.88), rgba(#e1ccd7, 0.88)),
     url('/assets/hero-bg-icons.svg');
   background-repeat: no-repeat;
   background-size: cover;
+  // eddee6
 
   .card {
     max-width: 100%;
@@ -291,11 +292,16 @@ article {
       width: 63%;
       border-radius: 10%;
     }
-    .play {
+    .play,
+    .para {
       position: absolute;
       left: 29%;
       top: 75%;
-      color: #bde0e0;
+      color: #9f4035;
+    }
+    .para {
+      top: 85%;
+      left: 25%;
     }
   }
 }
@@ -314,7 +320,8 @@ article {
     max-width: 30%;
   }
   .socialIcons {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
     .borders {
       border: 2px solid #efe5e5;
       border-radius: 30%;
@@ -328,14 +335,26 @@ article {
 
   .forms {
     h3 {
+      @include lg {
+        font-size: 3.5rem;
+      }
       color: #a84b9d;
-      font-size: 3.5rem;
+      font-size: 2rem;
       font-family: 'Pacifico', cursive;
       font-weight: 500;
     }
     p {
-      font-size: 1.2rem;
+      @include lg {
+        font-size: 1.2rem;
+      }
+      font-size: 1rem;
       max-width: 100%;
+    }
+    .btn {
+      @include lg {
+        width: 30%;
+      }
+      width: 100%;
     }
   }
 }
